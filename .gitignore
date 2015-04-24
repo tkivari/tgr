@@ -1,0 +1,7 @@
+# Distribution stuff
+.Python
+tgr
+include/
+bin/
+lib/
+pip-selfcheck.json
