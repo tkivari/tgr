@@ -1,10 +1,12 @@
 # tgr
 
-# requirements
+requirements
+------------
 
-    python 3
+    python 2.x, mongodb
 
-# Installation
+Installation
+------------
 
     virtualenv tgr
     . tgr/bin/activate
