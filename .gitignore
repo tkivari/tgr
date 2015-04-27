@@ -5,3 +5,5 @@ include/
 bin/
 lib/
 pip-selfcheck.json
+*.pyc
+config.py

@@ -3,3 +3,4 @@ Flask-RESTful==0.3.2
 pymongo==3.0
 Flask-Social==1.6.2
 python-instagram==0.8
+tweepy==3.3.0
