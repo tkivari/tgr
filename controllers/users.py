@@ -9,14 +9,15 @@ users_api = Blueprint('users_api', __name__)
 @users_api.route('', methods=['POST'])
 def createUser():
   user = User({
-          "username": request.args.get('username'),
-          "email": request.args.get('email'),
-          "password": request.args.get('password'),
+          "username": request.form.get('username'),
+          "email": request.form.get('email'),
+          "password": request.form.get('password'),
           "created": time.time()
         })
-  user.save
+  
+  user.save()
 
-  response = { "success": True, "id": user.get_id }
+  response = { "success": True, "user": user.__dict__ }
   return dumps(response)
   
 @users_api.route('/<user_id>', methods=['GET','PUT','DELETE'])
